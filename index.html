@@ -102,22 +102,19 @@
             <div class="lugar col-md-6">
                 <h2>Bs As - Octubre</h2>
                 <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad- condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
-                <a href="./pages/404.html">Conocé más</a>
-            <!--</div>
-        </section>
-        <section>-->
-                <h3>Encontranos en:</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1366237167395!2d-58.39758742425996!3d-34.60070657295539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfe23f5e3b%3A0x6f90fe1eadb235cf!2sMuseo%20del%20Agua%20y%20de%20la%20Historia%20Sanitaria!5e0!3m2!1ses!2sar!4v1692228848422!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a class="btnConoceMas" href="./pages/404.html">Conocé más</a>
+                <h3 class="container">Encontranos en:</h3>
+                <iframe class="container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1366237167395!2d-58.39758742425996!3d-34.60070657295539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabfe23f5e3b%3A0x6f90fe1eadb235cf!2sMuseo%20del%20Agua%20y%20de%20la%20Historia%20Sanitaria!5e0!3m2!1ses!2sar!4v1692228848422!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
-        <section id="formularioOrador">
+        <section id="formularioOrador" class="formularioOrador">
             <h2>
-                CONVIÉRTETE EN UN
-                <div>ORADOR</div>
+                <div>CONVIÉRTETE EN UN</div>
+                ORADOR
             </h2>
             <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
-            <form action="./pages/404.html" method="get">
+            <form action="./pages/404.html" method="get" class="recuadrosFormulario">
                 <div>
                     <input type="text" id="name" name="name" placeholder="Nombre" required>
                     <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
@@ -133,39 +130,44 @@
                 </div>
                 <p>Recuerda incluir un título para tu charla</p>
                 <div>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="btnEnviar">
                 </div>
             </form>
         </section>
     </main>
 
     <aside>
-        <section>
-            <div>
-                <h1>VENÍ A COTO!</h1>
-            </div>
-            <div>
-                <p>Este fin de semana aprovecha las ofertas que tenemos para vos! Mas de 5000 productos en descuento y además con tu compra, paricipas por el sorteo de 100 changos llenos! Te vas a perder esta oportunidad?</p>
-            </div>
-            <div>
-                <a href="https://www.coto.com.ar/">COTO, YO TE CONOZCO!</a>
-            </div>
-            <div>
+        <section class="publicidadCoto row">
+            <div class="col-md-6 videoCoto">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/11nBi19B670?si=h5kNBL3DcX7o8NIk&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 textoCoto">
+                <img src="./assets/img/logo_coto.png" alt="Logo de Coto"> 
+                <!--<h1>VENÍ A COTO!</h1>-->
+                <p>Este fin de semana aprovecha las ofertas que tenemos para vos! Hay mas de 3000 productos en descuento!!! Además con tu compra, participas en el sorteo por uno de los 1500 changos de nuestro aniversario! Te vas a perder esta oportunidad???</p>
+                <a href="https://www.coto.com.ar/">COTO, YO TE CONOZCO!</a>
             </div>
         </section>
     </aside>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="./pages/404.html">Preguntas frecuentes</a></li>
-                <li><a href="./pages/404.html">Contáctanos</a></li>
-                <li><a href="./pages/404.html">Prensa</a></li>
-                <li><a href="./pages/404.html">Conferencias</a></li>
-                <li><a href="./pages/404.html">Términos y condiciones</a></li>
-                <li><a href="./pages/404.html">Privacidad</a></li>
-                <li><a href="./pages/404.html">Estudiantes</a></li>
-            </ul>
+    <footer class="footer">
+        <nav class="navbar-expand-lg container">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/404.html">Preguntas frecuentes</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/404.html">Contáctanos</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/404.html">Prensa</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/404.html">Conferencias</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/404.html">Términos y condiciones</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/404.html">Privacidad</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/404.html">Estudiantes</a></li>
+                </ul>
+            </div>
         </nav>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script> 

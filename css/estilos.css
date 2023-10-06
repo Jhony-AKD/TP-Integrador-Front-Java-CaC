@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
     color: white;
     background-color: rgb(51,58,64);
@@ -136,4 +142,107 @@ header img{
 .lugar{
     background-color: rgb(51,58,64);
     color: white;
+    padding: 20px;
+}
+
+.btnConoceMas{
+    text-decoration: none;
+    border: solid white 1px;
+    border-radius: 5%;
+    padding: 4px;
+    color: white;
+}
+
+.lugar h3{
+    padding: 10px 0px 0px 10px;
+    text-align: center;
+}
+
+.formularioOrador{
+    text-align: center;
+}
+.formularioOrador h2{
+    margin: 10px;
+}
+ 
+ .formularioOrador h2 div{
+     font-size: 12px;
+     font-weight: normal;
+     padding-top: 15px;
+}
+
+.recuadrosFormulario input, textArea{
+    border: solid lightgray 1px;
+    border-radius: 5px;
+    width: 24%;
+    padding: 4px;
+    margin: 0% 1%;
+}
+
+.recuadrosFormulario textarea{
+    width: 50.5%;
+    height: 130px;
+    font-size: 21px;
+    padding-left: 15px;
+}
+ 
+.recuadrosFormulario p{
+    text-align: left;
+    margin-left: 25%;
+    font-size: 13px;
+    color: rgb(109, 109, 109);
+}
+
+.recuadrosFormulario .btnEnviar{
+    text-decoration: none;
+    background-color: rgb(150, 201, 62);
+    color: white;
+    width: 50.5%;
+    height: 45px;
+    font-size: 22px;
+}
+
+.publicidadCoto{
+    margin: 30px 100px;
+}
+
+.publicidadCoto img{
+    margin: 15px;
+}
+
+.videoCoto{
+    position: relative;
+    width: 50%;
+    height: 300px;     
+}
+
+.videoCoto iframe{
+    position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+.textoCoto{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/img/coto-aniversario.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+}
+
+.footer{
+    background: linear-gradient(90deg,rgb(28,54,67) 0%, rgb(30,83,114) 100%);
+    height: 100px;
+}
+
+.footer a{
+    color: white;
+}
+
+
+
+@media screen {
+    
 }
