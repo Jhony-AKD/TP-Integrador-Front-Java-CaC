@@ -40,6 +40,8 @@ header img{
     font-size: 20px;
     font-weight:400;
     margin-bottom: 30px;
+    width: 50%;
+    margin-left: 50%
 }
 
 .quieroSerOrador{
@@ -232,11 +234,11 @@ header img{
 
 .videoCoto iframe{
     position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .textoCoto{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/img/coto-aniversario.jpg);
@@ -244,6 +246,27 @@ header img{
     background-position: center;
     color: white;
     font-size: 20px;
+}
+
+.publicidadCoto a{
+    display: inline-block;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.publicidadCoto a:hover {
+    background-color: #ff9933
+}
+
+.btnEnlaceCoto{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
 }
 
 .footer{
@@ -266,13 +289,108 @@ header img{
 
 @media screen and (max-width: 768px) {
 
-    
-    
-    .conf{
-        padding-top: 50px;
-    }
+.navbar{
+        padding-top: 0px;
+        height: 70px;
+}
 
+.navbar-nav{
+    text-align: center;
+}
 
+.conferencia{
+    position: relative;
+}
 
+.conf{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+.conferencia p{
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0%
+}
+
+.quieroSerOrador{
+    margin: 20px;
+    display: block;
+}
+
+.comprarTickets{
+    margin: 20px;
+    display: block;
+}
+
+.oradores h2 div{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.tarjeta{
+    width: 98%;
+}
+
+.honolulu{
+    padding: 0;
+}
+
+.lugar{
+    text-align: center;
+}
+
+.formularioOrador p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.recuadrosFormulario input, textArea{
+    width: 45%;
+}
+
+.recuadrosFormulario textarea{
+    width: 92%;
+}
+ 
+.recuadrosFormulario p{
+    text-align: center;
+    margin-left: 0;
+}
+
+.recuadrosFormulario .btnEnviar{
+    width:70%;
+    margin-bottom: 15px;
+}
+
+.publicidadCoto{
+    margin: 5px;
+}
+
+.publicidadCoto img{
+    margin: 15px;
+}
+
+.videoCoto{
+    width: 100%;
+    height: 250px;     
+}
+
+.textoCoto{
+    text-align: center;
+}
+
+.btnEnlaceCoto{
+    justify-content: center;
+}
+
+.footer{
+    height: 220px;
+}
+
+.footer a{
+    display: inline;
+}
 
 }
