@@ -54,6 +54,11 @@ header img{
     margin: 5px;
 }
 
+.quieroSerOrador:hover {
+    background-color: rgba(255, 255, 255, 0.367);
+    color: rgb(10, 239, 67);
+}
+
 .comprarTickets{
     text-decoration: none;
     color: white;
@@ -62,6 +67,11 @@ header img{
     font-size: 20px;
     padding: 10px;
     margin: 5px;
+}
+
+.comprarTickets:hover {
+    background-color: rgb(10, 239, 67);
+    color: rgb(255, 255, 255);
 }
 
 .oradores h2{
@@ -168,6 +178,11 @@ header img{
     color: white;
 }
 
+.btnConoceMas:hover {
+    background-color: rgba(255, 255, 255, 0.367);
+    color: rgb(255, 255, 255);
+}
+
 .encontranosEn{
     text-align: center;
     margin-top: 15px;
@@ -218,6 +233,11 @@ header img{
     font-size: 22px;
 }
 
+.recuadrosFormulario .btnEnviar:hover {
+    background-color: rgba(147, 207, 43, 0.873);
+    color: rgb(255, 255, 255);
+}
+
 .publicidadCoto{
     margin: 30px 100px;
 }
@@ -228,8 +248,7 @@ header img{
 
 .videoCoto{
     position: relative;
-    width: 50%;
-    height: 300px;     
+    width: 50%;    
 }
 
 .videoCoto iframe{
@@ -289,108 +308,293 @@ header img{
 
 @media screen and (max-width: 768px) {
 
-.navbar{
-        padding-top: 0px;
-        height: 70px;
+    header h2{
+        margin-right: 16%;
+        margin-top: 2%;
+    }
+
+    header button{
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .navbar{
+            padding-top: 0px;
+    }
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .conf{
+        text-align: center;
+        padding-top: 25vh;
+    }
+
+    .conferencia p{
+        margin-bottom: 20px;
+        width: 100%;
+        margin: 0%
+    }
+
+    .quieroSerOrador{
+        margin: 20px;
+        display: block;
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    .comprarTickets{
+        margin: 20px;
+        display: block;
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    .oradores h2 div{
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .tarjeta{
+        width: 90%;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .lugarFecha{
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .honolulu{
+        padding: 0%;
+    }
+
+    .lugar{
+        text-align: center;
+    }
+
+    .btnConoceMas{
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    .formularioOrador p{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .recuadrosFormulario input, textArea{
+        width: 45%;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    }
+
+    .recuadrosFormulario textarea{
+        width: 92%;
+    }
+    
+    .recuadrosFormulario p{
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .recuadrosFormulario .btnEnviar{
+        width:70%;
+        margin-bottom: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+
+    .publicidadCoto{
+        margin: 5px;
+    }
+
+    .publicidadCoto img{
+        margin: 15px;
+    }
+
+    .videoCoto{
+        width: 100%;
+        height: 250px;   
+    }
+
+    .textoCoto{
+        text-align: center;
+    }
+
+    .btnEnlaceCoto{
+        justify-content: center;
+    }
+
+    .footer{
+        height: 220px;
+    }
+
+    .footer a{
+        display: inline;
+    }
+
 }
 
-.navbar-nav{
-    text-align: center;
+
+@media screen and (max-width: 389px) {
+
+    header h2{
+        margin-right: 6%;
+    }
+
+    .conf{
+        text-align: center;
+        padding-top: 20%
+    }
 }
 
-.conferencia{
-    position: relative;
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    header h2{
+        margin-right: 55%;
+        margin-top: 2%;
+    }
+
+    .navbar{
+            padding-top: 0px;
+    }
+
+    .navbar-nav{
+        text-align: right;
+    }
+
+    .conf{
+        text-align: right;
+        padding-top: 10vh;
+    }
+
+    .conferencia p{
+        margin-bottom: 20px;
+        width: 100%;
+        margin: 0%
+    }
+
+    .quieroSerOrador{   
+        display: inline-block;
+    }
+
+    .comprarTickets{
+        display: inline-block;
+    }
+
+    .oradores{
+        margin-left: 10%;
+    }
+
+    .tarjeta{
+        width: 28%;
+        margin: 2%;
+    }
+
+    .publicidadCoto{
+        margin: 30px 10px;
+    }
+
+    .publicidadCoto img{
+        margin: 10px;
+        height: 10%;
+    }
+
+    .textoCoto p{
+        margin: 0;
+    }
+
+    .btnEnlaceCoto{
+        padding: 2px;
+        margin-top: 15px;
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .footer div{
+        padding: 0;
+    }
+
+    .footer a{
+        margin: 0 4%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
 }
 
-.conf{
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
-}
 
-.conferencia p{
-    margin-bottom: 20px;
-    width: 100%;
-    margin: 0%
-}
+@media (max-width: 750px) and (orientation: landscape) {
+    
+    header h2{
+        margin-right: 30%;
+    }
 
-.quieroSerOrador{
-    margin: 20px;
-    display: block;
-}
+    .conf{
+        padding-top: 5vh;
+    }
 
-.comprarTickets{
-    margin: 20px;
-    display: block;
-}
+    .conferencia p{
+        margin-bottom: 20px;
+        width: 100%;
+        margin: 0%
+    }
 
-.oradores h2 div{
-    font-size: 12px;
-    font-weight: normal;
-}
+    .quieroSerOrador{   
+        display: inline-block;
+        margin-right: 0;
+    }
 
-.tarjeta{
-    width: 98%;
-}
+    .comprarTickets{
+        display: inline-block;
+        margin-right: 0;
+    }
 
-.honolulu{
-    padding: 0;
-}
+    .tarjeta{
+        width: 30%;
+        margin: 1%;
+        text-align: center;
+    }
 
-.lugar{
-    text-align: center;
-}
+    .colorNaranja{
+        margin-top: 3%;
+        font-size:x-small;
+    }
 
-.formularioOrador p{
-    padding-left: 10%;
-    padding-right: 10%;
-}
+    .colorCeleste{
+        margin-top: 3%;
+        font-size:x-small;
+    }
 
-.recuadrosFormulario input, textArea{
-    width: 45%;
-}
+    .colorGris{
+        margin-top: 3%;
+        font-size:x-small;
+    }
 
-.recuadrosFormulario textarea{
-    width: 92%;
-}
- 
-.recuadrosFormulario p{
-    text-align: center;
-    margin-left: 0;
-}
+    .colorRojo{
+        margin-top: 3%;
+        font-size:x-small;
+    }
 
-.recuadrosFormulario .btnEnviar{
-    width:70%;
-    margin-bottom: 15px;
-}
+    .tituloNombre{
+        font-size: large;
+        margin-top: 6%;
+    }
 
-.publicidadCoto{
-    margin: 5px;
-}
+    .cuerpoTarjeta p{
+        font-size: small;
+    }
 
-.publicidadCoto img{
-    margin: 15px;
-}
-
-.videoCoto{
-    width: 100%;
-    height: 250px;     
-}
-
-.textoCoto{
-    text-align: center;
-}
-
-.btnEnlaceCoto{
-    justify-content: center;
-}
-
-.footer{
-    height: 220px;
-}
-
-.footer a{
-    display: inline;
-}
+    .footer a{
+        font-size: small;
+        width: 80px;
+        height: 64px;
+        margin: 0 2%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
 
 }
