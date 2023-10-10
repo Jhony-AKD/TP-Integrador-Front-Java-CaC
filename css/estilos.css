@@ -240,6 +240,18 @@ header img{
 
 .publicidadCoto{
     margin: 30px 100px;
+    background-color: rgba(197, 193, 201, 0.464);
+    border-radius: 1%;
+    box-shadow: 0px 0px 10px 0px rgba(97, 97, 97, 0.9);
+}
+
+.publicidad{
+    padding: 0px;
+}
+.publicidad p{
+    margin: 0;
+    padding: 0;
+    font-size: small;
 }
 
 .publicidadCoto img{
@@ -248,7 +260,8 @@ header img{
 
 .videoCoto{
     position: relative;
-    width: 50%;    
+    width: 50%;
+    background-color: rgb(148, 148, 148); 
 }
 
 .videoCoto iframe{
@@ -386,7 +399,7 @@ header img{
     }
 
     .recuadrosFormulario textarea{
-        width: 92%;
+        width: 92.5%;
     }
     
     .recuadrosFormulario p{
@@ -395,7 +408,7 @@ header img{
     }
 
     .recuadrosFormulario .btnEnviar{
-        width:70%;
+        width:92.5%;
         margin-bottom: 15px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     }
@@ -488,6 +501,20 @@ header img{
         margin: 2%;
     }
 
+    .recuadrosFormulario input, textArea{
+        width: 45%;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    }
+
+    .recuadrosFormulario textarea{
+        width: 92.5%;
+    }
+
+    .recuadrosFormulario .btnEnviar{
+        width:92.5%;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+    
     .publicidadCoto{
         margin: 30px 10px;
     }
