@@ -27,8 +27,9 @@ header img{
 
 .conferencia{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/ba1.jpg);
+    background-size: cover;
     height: 90vh;
-    background-position: 5%
+    background-position: 5%;
 }
 
 .conf{
@@ -202,12 +203,16 @@ header img{
      padding-top: 10px;
 }
 
+.formularioOrador p{
+    margin-bottom: 0;
+}
+
 .recuadrosFormulario input, textArea{
     border: solid lightgray 1px;
     border-radius: 5px;
     width: 24%;
     padding: 4px;
-    margin: 0% 1%;
+    margin: 0.5% 1%;
 }
 
 .recuadrosFormulario textarea{
