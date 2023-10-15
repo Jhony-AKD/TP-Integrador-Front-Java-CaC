@@ -325,6 +325,43 @@ header img{
 
 /*Pagina "Comprar ticket"*/
 
+.tarjetaTickets{
+    margin: 30px 5px 10px;
+    width: 300px;
+    height: 260px;
+    text-align: center;
+    border-radius: 0;
+}
+
+.tarjetaTickets h3{
+    margin: 20px;
+}
+
+.tarjetaTickets p{
+    font-size: 24px;
+}
+
+.tarjetaTickets .porcentajeDescuento{
+    font-weight: bold;
+    margin: 16px;
+}
+
+.tarjetaTickets .terminos{
+    font-size: 18px;
+    color: gray;
+}
+
+.tarjetasTickets .azul{
+    border: solid blue 2px;
+}
+
+.tarjetasTickets .verde{
+    border: solid green 2px;
+}
+
+.tarjetasTickets .naranja{
+    border: solid orange 2px;
+}
 
 
 .footer .container-fluid a{
