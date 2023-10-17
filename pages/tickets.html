@@ -89,29 +89,35 @@
         <section class="formularioTickets">
             <h3>VENTA</h3>
             <h2>VALOR DE TICKET $200</h2>
-            <div>
-                <input type="text" id="name" name="name" placeholder="Nombre" required>
+            <div class="formTkNombreApellido">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                 <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-            <div>
             </div>
+            <div>
                 <input type="email" id="correo" name="correo" placeholder="Correo" required>
             </div>
-            <div>
-                <p>Cantidad</p>
-                <input type="text" id="cantidad" name="cantidad" placeholder="Cantidad" required>
-                <p>Categoria</p>
-                <select name="categoria" id="categoria">
-                    <option selected value="estudiante">Estudiante</option>
-                    <option value="trainee">Trainee</option>
-                    <option value="junior">Junior</option>
-                </select>
+            <div class="container">
+                <div class="row">
+                    <div class="col formTkCantidad">
+                        <p>Cantidad</p>
+                        <input type="text" id="cantidad" name="cantidad" placeholder="Cantidad" required>
+                    </div>
+                    <div class="col formTkCategoria">
+                        <p>Categoria</p>
+                        <select name="categoria" id="categoria">
+                            <option selected value="estudiante">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="totalAPAgar container">
                 <p>
                     Total a Pagar: $
                 </p>
             </div>
-            <div>
+            <div class="formTkBotones">
                 <input type="reset" value="Borrar">
                 <input type="submit" value="Resumen">
             </div>
@@ -142,6 +148,6 @@
             </nav>
         </div>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script> 
+    <script src="../js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
