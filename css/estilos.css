@@ -338,7 +338,7 @@ header img{
 }
 
 .tarjetaTickets p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .tarjetaTickets .porcentajeDescuento{
@@ -347,7 +347,7 @@ header img{
 }
 
 .tarjetaTickets .terminos{
-    font-size: 15px;
+    font-size: 14px;
     color: gray;
     margin-top: 16px;
     margin-bottom: 24px;
@@ -423,7 +423,7 @@ input::placeholder{
 }
 
 .formularioTickets .container p{
-    font-size: 19px;
+    font-size: 18px;
     margin-bottom: 6px;
 }
 
@@ -464,7 +464,7 @@ input::placeholder{
     width: 23.5%;
     color: white;
     background-color: rgb(150, 201, 62);
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
