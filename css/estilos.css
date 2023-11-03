@@ -25,6 +25,12 @@ header img:hover{
     color:green;
 }
 
+.navbar-dark .navbar-nav .nav-link.colorVerde:hover{
+    color: white;
+    background-color: rgb(10, 239, 67);
+    border-radius: 5px;
+}
+
 .navbar-nav{
     font-size: 20px;
 }
@@ -59,7 +65,7 @@ header img:hover{
     margin: 5px;
 }
 
-.quieroSerOrador:hover {
+.quieroSerOrador:hover{
     background-color: rgba(255, 255, 255, 0.367);
     color: rgb(10, 239, 67);
 }
@@ -74,9 +80,9 @@ header img:hover{
     margin: 5px;
 }
 
-.comprarTickets:hover {
+.comprarTickets:hover{
     background-color: rgb(10, 239, 67);
-    color: rgb(255, 255, 255);
+    color: white
 }
 
 .oradores h2{
@@ -333,6 +339,12 @@ header img:hover{
 
 /*Pagina "Comprar ticket"*/
 
+.activa{
+    color: white !important;
+    background-color: rgb(10, 239, 67);
+    border-radius: 5px;
+}
+
 .tarjetaTickets{
     margin: 24px 3px 6px;
     width: 18%;
@@ -410,8 +422,9 @@ input::placeholder{
     border: solid lightgray 2px;
     border-radius: 5px;
     height: 44px;
-    padding: 4px;
+    padding-left: 6px;
     margin: 0.3%;
+    font-size: 18px;
 }
 
 .formTkNombreApellido input{
@@ -451,7 +464,7 @@ input::placeholder{
     margin: 1px;
     font-size: 18px;
     color: grey;
-    padding-left: 12px;
+    padding-left: 6px;
 }
 
 .totalAPAgar{
@@ -465,7 +478,6 @@ input::placeholder{
 
 .totalAPAgar p{
     padding: 30px;
-    
 }
 
 .formTkBotones input{

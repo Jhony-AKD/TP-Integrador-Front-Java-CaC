@@ -34,7 +34,7 @@
                     <a class="nav-link active" aria-current="page" href="../index.html#formularioOrador">Conviértete en orador</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link colorVerde" href="tickets.html">Comprar tickets</a>
+                    <a class="nav-link activa" href="#">Comprar tickets</a>
                     </li>
                 </ul>
             </div>
@@ -74,37 +74,41 @@
         <section class="formularioTickets">
             <h3>VENTA</h3>
             <h2>VALOR DE TICKET $200</h2>
-            <div class="formTkNombreApellido">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-            </div>
-            <div>
-                <input type="email" id="correo" name="correo" placeholder="Correo" required>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col formTkCantidad">
-                        <p>Cantidad</p>
-                        <input type="text" id="cantidad" name="cantidad" placeholder="Cantidad" required>
-                    </div>
-                    <div class="col formTkCategoria">
-                        <p>Categoria</p>
-                        <select name="categoria" id="categoria">
-                            <option selected value="estudiante">Estudiante</option>
-                            <option value="trainee">Trainee</option>
-                            <option value="junior">Junior</option>
-                        </select>
+            <form action="">
+                <div class="formTkNombreApellido">
+                    <input type="text" class="campoFormulario" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <div class="invalid-feedback" id="msgErrorNombre">
+                        Ingrese su nombre
+                      </div>
+                    <input type="text" class="campoFormulario" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <input type="email" class="campoFormulario" id="correo" name="correo" placeholder="Correo" required>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col formTkCantidad">
+                            <p>Cantidad</p>
+                            <input type="number" class="campoFormulario" id="cantidad" name="cantidad" placeholder="Cantidad" min="1" required>
+                        </div>
+                        <div class="col formTkCategoria">
+                            <p>Categoria</p>
+                            <select name="categoria" id="categoria">
+                                <option selected value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="totalAPAgar container">
-                <p>Total a Pagar: $</p>
-            </div>
-            <div class="formTkBotones">
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Resumen">
-            </div>
-        </section>
+                <div class="totalAPAgar container">
+                    <p>Total a Pagar: $</p>
+                </div>
+                <div class="formTkBotones">
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Resumen">
+                </div>
+            </form>
     </main>
 
     <footer class="footer">
@@ -131,6 +135,7 @@
             </nav>
         </div>
     </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script> 
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tickets.js"></script>
 </body>
 </html>
