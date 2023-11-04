@@ -397,100 +397,86 @@ header img:hover{
     background-color: rgb(255, 215, 141);
 }
 
-.formularioTickets{
-    text-align: center;
-}
-
-.formularioTickets h3{
+.titulos h3{
     font-size: 14px;
     margin: 0;
     font-weight: normal;
+    text-align: center;
 }
 
-.formularioTickets h2{
+.titulos h2{
     font-size: 38px;
     margin-top: 2px;
     margin-bottom: 12px;
+    text-align: center;
 }
 
-input::placeholder{
-    font-size: 18px;
-    padding-left: 10px;
+.formularioTicket{
+    width: 57%;
 }
 
-.formularioTickets input{
-    border: solid lightgray 2px;
-    border-radius: 5px;
-    height: 44px;
-    padding-left: 6px;
-    margin: 0.3%;
-    font-size: 18px;
+.formTkNombre{
+    padding-right:0%; 
 }
-
-.formTkNombreApellido input{
-    width: 23.5%;
-}
-
 #correo{
-    width: 48%;
-    margin-top: 14px;
+    margin-top: 16px;
 }
 
-.formularioTickets .container{
-    width: 48%;
-    text-align: start;
-    padding:0;
-    margin-top: 11px;
-}
-
-.formularioTickets .container p{
-    font-size: 18px;
+.cantCat p{
+    margin-top: 16px;
     margin-bottom: 6px;
 }
 
 .formTkCantidad{
-    padding-right: 0;
-}
-.formTkCantidad input{
-    width: 100%;
-    margin: 1px;
+    padding-right: 0%;
 }
 
 .formTkCategoria #categoria{
     width: 100%;
-    height: 44px;
+    height: 38px;
     border-radius: 5px;
-    border: solid lightgray 2px;
-    margin: 1px;
-    font-size: 18px;
+    border: solid lightgray 1px;
     color: grey;
-    padding-left: 6px;
+    padding-left: 8px;
 }
 
 .totalAPAgar{
-    height: 58px;
+    height: 50px;
     background-color: rgb(204, 229, 255);
     border-radius: 5px;
-    margin: 34px auto 30px !important;
+    margin: 34px auto 26px !important;
     display: flex;
-    align-items: center;
+    align-items:center;
 }
 
 .totalAPAgar p{
-    padding: 30px;
+    padding-left: 30px;
+    margin: 0;
 }
 
 .formTkBotones input{
-    width: 23.5%;
+    width: 97%;
+    height: 40px;
+    text-decoration: none;
     color: white;
     background-color: rgb(150, 201, 62);
+    border: none;
+    border-radius: 5%;
     font-size: 18px;
-    margin-bottom: 20px;
+}
+
+.botBorrar{
+    padding-right: 0;
+    margin-bottom: 20px
+}
+
+.botResumen{
+    padding: 0;
+    margin-bottom: 20px
 }
 
 .formTkBotones input:hover {
     background-color: rgba(147, 207, 43, 0.873);
-    color: rgb(255, 255, 255);
 }
 
 /*Pagina "404"*/
@@ -535,6 +521,10 @@ input::placeholder{
 
 .btn404:hover {
     background-color: rgb(220, 220, 23);
+}
+
+.propia{
+    display: block;
 }
 
 
@@ -661,6 +651,7 @@ input::placeholder{
     .tarjetaTickets{
         margin: 18px 3px 6px;
         width: 31%;
+        display: block;
     }
 
     .tarjetaTickets h3{
@@ -679,41 +670,32 @@ input::placeholder{
         margin-top: 12px;
         margin-bottom: 10px;
     }
-
-    .formularioTickets h3{
+    
+    .formularioTicket{
+        width: 100%;
+        max-width: none;
+    }
+    
+    .titulos h3{
         font-size: 10px;
     }
 
-    .formularioTickets h2{
+    .titulos h2{
         font-size: 20px;
     }
 
     input::placeholder{
         font-size: 12px;
-        padding-left: 6px;
     }
 
-    .formularioTickets input{
+    .formularioTicket input{
         height: 30px;
     }
 
-    .formTkNombreApellido input{
-        width: 45%;
-    }
-
-    #correo{
-        width: 92%;
-    }
-
-    .formularioTickets .container{
-        width: 92%;
-        margin-top: 12px;
-    }
-
-    .formularioTickets .container p{
+    .cantCat p{
         font-size: 12px;
     }
-
+    
     .formTkCategoria #categoria{
         height: 30px;
         font-size: 12px;
@@ -726,14 +708,15 @@ input::placeholder{
 
     .totalAPAgar p{
         padding: 16px;
-        
+        font-size: 12px; 
     }
 
     .formTkBotones input{
-        width: 45%;
+        height: 30px;
         font-size: 12px;
-        margin-bottom: 12px;
     }
+
+   
 
     /*Pagina "404"*/
 

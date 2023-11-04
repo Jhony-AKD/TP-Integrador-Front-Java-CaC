@@ -42,8 +42,8 @@
     </header>
 
     <main>
-        <section class="tarjetasTickets container">
-            <div class="row justify-content-center">
+        <section class="container">
+            <div class="tarjetasTickets row justify-content-center">
                 <div class="tarjetaTickets azul card col-md-3">
                     <h3>
                         Estudiante
@@ -69,27 +69,35 @@
                     <p class="terminos">* presentar documentación</p>
                 </div>
             </div>
-        </section>
 
-        <section class="formularioTickets">
-            <h3>VENTA</h3>
-            <h2>VALOR DE TICKET $200</h2>
-            <form action="">
-                <div class="formTkNombreApellido">
-                    <input type="text" class="campoFormulario" id="nombre" name="nombre" placeholder="Nombre" required>
-                    <div class="invalid-feedback" id="msgErrorNombre">
-                        Ingrese su nombre
-                      </div>
-                    <input type="text" class="campoFormulario" id="apellido" name="apellido" placeholder="Apellido" required>
-                </div>
-                <div>
-                    <input type="email" class="campoFormulario" id="correo" name="correo" placeholder="Correo" required>
-                </div>
-                <div class="container">
+            <div class="titulos">
+                <h3>VENTA</h3>
+                <h2>VALOR DE TICKET $200</h2>
+            </div>
+
+            <form action="" class="row justify-content-center">
+                <div class="formularioTicket">
                     <div class="row">
+                        <div class="col formTkNombre">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                            <div class="invalid-feedback" id="msgErrorNombre">
+                                Ingrese su nombre
+                            </div>
+                        </div>
+                        <div class="col formTkApellido">
+                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+                            <div class="invalid-feedback" id="msgErrorApellido">
+                                Ingrese su apellido
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+                    </div>                                                        
+                    <div class="row cantCat">
                         <div class="col formTkCantidad">
                             <p>Cantidad</p>
-                            <input type="number" class="campoFormulario" id="cantidad" name="cantidad" placeholder="Cantidad" min="1" required>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="Cantidad" min="1" required>
                         </div>
                         <div class="col formTkCategoria">
                             <p>Categoria</p>
@@ -99,16 +107,21 @@
                                 <option value="junior">Junior</option>
                             </select>
                         </div>
+                    </div>                   
+                    <div class="totalAPAgar">
+                        <p>Total a Pagar: $</p>
                     </div>
-                </div>
-                <div class="totalAPAgar container">
-                    <p>Total a Pagar: $</p>
-                </div>
-                <div class="formTkBotones">
-                    <input type="reset" value="Borrar">
-                    <input type="submit" value="Resumen">
+                    <div class="row">
+                        <div class="col formTkBotones botBorrar">
+                            <input type="reset" value="Borrar"  id="btnBorrar">     
+                        </div>
+                        <div class="col formTkBotones botResumen">
+                            <input type="button" value="Resumen" id="btnResumen">
+                        </div>
+                    </div> 
                 </div>
             </form>
+        </section>      
     </main>
 
     <footer class="footer">

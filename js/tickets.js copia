@@ -44,36 +44,4 @@ const totalAPagar = () => {
         return;
     }
 
-
-
-
-    let totalValorTickets = (cantidadTickets.value) * valorTicket;
-
-
-    switch (categoria.value) {
-        case "0":
-            totalValorTickets = totalValorTickets ;
-            break;
-        case "1":
-            totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
-            break;
-        case "2":
-            totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
-            break;
-        case "3":
-            totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
-            break;
-    }
-    
-    totalPago.innerHTML = totalValorTickets;
 }
-
-
-btnResumen.addEventListener("click", totalAPagar);
-
-const resetTotalAPagar = () => {
-    quitarClaseError();
-    totalPago.innerHTML = "";
-}
-
-btnBorrar.addEventListener("click", resetTotalAPagar);
