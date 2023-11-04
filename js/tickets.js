@@ -51,16 +51,16 @@ const totalAPagar = () => {
 
 
     switch (categoria.value) {
-        case "0":
+        case "invitado":
             totalValorTickets = totalValorTickets ;
             break;
-        case "1":
+        case "estudiante":
             totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
             break;
-        case "2":
+        case "trainee":
             totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
             break;
-        case "3":
+        case "junior":
             totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
             break;
     }

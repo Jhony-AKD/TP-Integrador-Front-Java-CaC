@@ -452,6 +452,7 @@ header img:hover{
 .totalAPAgar p{
     padding-left: 30px;
     margin: 0;
+    padding-right: 0;
 }
 
 .formTkBotones input{
@@ -715,8 +716,6 @@ header img:hover{
         height: 30px;
         font-size: 12px;
     }
-
-   
 
     /*Pagina "404"*/
 
