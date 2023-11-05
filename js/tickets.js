@@ -6,7 +6,7 @@ let descuentoTrainee    = 50;
 let descuentoJunior     = 15;
 
 let nombre              = document.getElementById("nombre");
-let divErrorNombre      = document.getElementById("msgErrorNombre")
+let divErrorNombre      = document.getElementById("msgErrorNombre");
 let apellido            = document.getElementById("apellido");
 let divErrorApellido    = document.getElementById("msgErrorApellido");
 let correo              = document.getElementById("correo");
@@ -23,9 +23,30 @@ const quitarClaseError = () => {
     } 
 }
 
+const validarCorreo = (correo) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo);
+}
+
+nombre.addEventListener("input", () => {
+    quitarClaseError();
+});
+
+apellido.addEventListener("input", () => {
+    quitarClaseError();
+});
+
+correo.addEventListener("input", () => {
+    quitarClaseError();
+    if (!validarCorreo(correo.value)) {
+        correo.classList.add("is-invalid");
+    }
+});
+
+cantidadTickets.addEventListener("input", () => {
+    quitarClaseError();
+});
 
 const totalAPagar = () => {
-
     quitarClaseError();
 
     if (nombre.value === "") {
@@ -40,27 +61,32 @@ const totalAPagar = () => {
         return;
     }
 
-    if (correo.value === "") {
+    if (correo.value === "" || !validarCorreo(correo.value)) {
         correo.classList.add("is-invalid");
         correo.focus();
         return;
     }
 
-    const validoCorreo = correo => {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo);
-    }
-
-    if (!validoCorreo(correo.value)) {
-        correo.classList.add("is-invalid");
-        correo.focus();
+    if (cantidadTickets.value === "") {
+        cantidadTickets.classList.add("is-invalid");
+        cantidadTickets.focus();
         return;
     }
-
-    if (cantidad.value === "") {
-        cantidad.classList.add("is-invalid");
-        cantidad.focus();
-        return;
-    }
+    
+    apellido.addEventListener("input", () => {
+        quitarClaseError();
+    });
+    
+    correo.addEventListener("input", () => {
+        quitarClaseError();
+        if (!validarCorreo(correo.value)) {
+            correo.classList.add("is-invalid");
+        }
+    });
+    
+    cantidadTickets.addEventListener("input", () => {
+        quitarClaseError();
+    });
 
 
     let totalValorTickets = (cantidadTickets.value) * valorTicket;
@@ -91,3 +117,47 @@ const resetTotalAPagar = () => {
 }
 
 btnBorrar.addEventListener("click", resetTotalAPagar);
+btnBorrar.addEventListener("click", resetearTarjetas);
+
+
+var tarjetaEstudiante = document.getElementById("tarjetaEstudiante");
+var tarjetaTrainee    = document.getElementById("tarjetaTrainee");
+var tarjetaJunior     = document.getElementById("tarjetaJunior");
+var categoriaSelect   = document.getElementById("categoria");
+
+tarjetaEstudiante.addEventListener("click", function() {
+    categoriaSelect.value = "estudiante";
+    resetearTarjetas();
+    tarjetaEstudiante.classList.add("seleccionadaAzul");
+});
+
+tarjetaTrainee.addEventListener("click", function() {
+    categoriaSelect.value = "trainee";
+    resetearTarjetas();
+    tarjetaTrainee.classList.add("seleccionadaVerde");
+});
+
+tarjetaJunior.addEventListener("click", function() {
+    categoriaSelect.value = "junior";
+    resetearTarjetas();
+    tarjetaJunior.classList.add("seleccionadaNaranja");
+});
+
+categoriaSelect.addEventListener("change", function() {
+    var categoriaSeleccionada = categoriaSelect.value;
+    resetearTarjetas();
+
+    if (categoriaSeleccionada === "estudiante") {
+        tarjetaEstudiante.classList.add("seleccionadaAzul");
+    } else if (categoriaSeleccionada === "trainee") {
+        tarjetaTrainee.classList.add("seleccionadaVerde");
+    } else if (categoriaSeleccionada === "junior") {
+        tarjetaJunior.classList.add("seleccionadaNaranja");
+    }
+});
+
+function resetearTarjetas() {
+    tarjetaEstudiante.classList.remove("seleccionadaAzul");
+    tarjetaTrainee.classList.remove("seleccionadaVerde");
+    tarjetaJunior.classList.remove("seleccionadaNaranja");
+}

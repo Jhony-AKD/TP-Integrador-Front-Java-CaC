@@ -381,6 +381,11 @@ header img:hover{
     background-color:lightskyblue;
 }
 
+.seleccionadaAzul{
+    background-color: lightskyblue;
+    box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
+}
+
 .tarjetasTickets .verde{
     border: solid green 2px;
 }
@@ -389,12 +394,22 @@ header img:hover{
     background-color: lightgreen;
 }
 
+.seleccionadaVerde{
+    background-color: lightgreen;
+    box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
+}
+
 .tarjetasTickets .naranja{
     border: solid orange 2px;
 }
 
 .tarjetasTickets .naranja:hover{
     background-color: rgb(255, 215, 141);
+}
+
+.seleccionadaNaranja{
+    background-color: rgb(255, 215, 141);
+    box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
 }
 
 .titulos h3{
