@@ -440,7 +440,7 @@ header img:hover{
     padding-left: 8px;
 }
 
-.totalAPAgar{
+.totalAPagar{
     height: 50px;
     background-color: rgb(204, 229, 255);
     border-radius: 5px;
@@ -449,7 +449,7 @@ header img:hover{
     align-items:center;
 }
 
-.totalAPAgar p{
+.totalAPagar p{
     padding-left: 30px;
     margin: 0;
     padding-right: 0;
@@ -522,10 +522,6 @@ header img:hover{
 
 .btn404:hover {
     background-color: rgb(220, 220, 23);
-}
-
-.propia{
-    display: block;
 }
 
 
@@ -691,6 +687,7 @@ header img:hover{
 
     .formularioTicket input{
         height: 30px;
+        font-size: 12px;
     }
 
     .cantCat p{
@@ -702,12 +699,12 @@ header img:hover{
         font-size: 12px;
     }
 
-    .totalAPAgar{
+    .totalAPagar{
         height: 40px;
         margin: 20px auto 20px !important;
     }
 
-    .totalAPAgar p{
+    .totalAPagar p{
         padding: 16px;
         font-size: 12px; 
     }
@@ -715,6 +712,11 @@ header img:hover{
     .formTkBotones input{
         height: 30px;
         font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .botBorrar, .botResumen{
+        margin: 0px;
     }
 
     /*Pagina "404"*/
@@ -780,34 +782,8 @@ header img:hover{
         margin-bottom: 14px;
     }
 
-    .formularioTickets h2{
-        font-size: 20px;
-    }
-
-    input::placeholder{
-        font-size: 12px;
-        padding-left: 4px;
-    }
-
-    .formularioTickets input{
+    .formularioTicket input{
         height: 24px;
-    }
-
-    .formTkNombreApellido input{
-        width: 46%;
-    }
-
-    #correo{
-        width: 94%;
-    }
-
-    .formularioTickets .container{
-        width: 94%;
-        margin-top: 6px;
-    }
-
-    .formularioTickets .container p{
-        font-size: 12px;
     }
 
     .formTkCategoria #categoria{
@@ -815,19 +791,12 @@ header img:hover{
         font-size: 12px;
     }
 
-    .totalAPAgar{
-        height: 38px;
-        margin: 18px auto 20px !important;
-    }
-
-    .totalAPAgar p{
-        padding: 18px;
-        
+    .totalAPagar{
+        height: 32px;
     }
 
     .formTkBotones input{
-        width: 46%;
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 12px;
     }
 }
@@ -943,20 +912,9 @@ header img:hover{
         height: 36px;
     }
 
-    .formTkNombreApellido input{
-        width: 36%;
-    }
-
-    #correo{
-        width: 73%;
-    }
-
-    .formularioTickets .container{
-        width: 73%;
-    }
-
-    .formularioTickets .container p{
-        font-size: 16px;
+    .formularioTicket{
+        width: 100%;
+        max-width: none;
     }
 
     .formTkCategoria #categoria{
@@ -964,20 +922,23 @@ header img:hover{
         font-size: 16px;
     }
 
-    .totalAPAgar{
+    .totalAPagar{
         height: 46px;
         margin: 24px auto 24px !important;
     }
 
-    .totalAPAgar p{
+    .totalAPagar p{
         padding: 18px;
         
     }
 
     .formTkBotones input{
-        width: 36%;
         font-size: 16px;
         margin-bottom: 16px;
+    }
+
+    .botBorrar, .botResumen{
+        margin: 0px;
     }
 
     /*Pagina "404"*/
@@ -1087,11 +1048,11 @@ header img:hover{
         margin-bottom: 14px;
     }
 
-    .formularioTickets h3{
+    .titulos h3{
         font-size: 12px;
     }
 
-    .formularioTickets h2{
+    .titulos h2{
         font-size: 28px;
     }
 
@@ -1099,11 +1060,7 @@ header img:hover{
         font-size: 14px;
     }
 
-    .formularioTickets input{
-        height: 32px;
-    }
-
-    .formularioTickets .container p{
+    .formularioTicket p{
         font-size: 14px;
     }
 
@@ -1114,7 +1071,7 @@ header img:hover{
         padding-left: 8px;
     }
 
-    .totalAPAgar{
+    .totalAPagar{
         margin: 10px auto 20px !important;
     }
 

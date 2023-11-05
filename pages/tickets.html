@@ -93,11 +93,17 @@
                     </div>
                     <div>
                         <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+                        <div class="invalid-feedback" id="msgErrorCorreo">
+                            Ingrese un correo electrónico válido
+                        </div>
                     </div>                                                        
                     <div class="row cantCat">
                         <div class="col formTkCantidad">
                             <p>Cantidad</p>
                             <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="Cantidad" min="1" required>
+                            <div class="invalid-feedback" id="msgErrorCorreo">
+                                Ingrese la cantidad de tickets requerida
+                            </div>
                         </div>
                         <div class="col formTkCategoria">
                             <p>Categoria</p>
@@ -109,7 +115,7 @@
                             </select>
                         </div>
                     </div>                   
-                    <div class="totalAPAgar">
+                    <div class="totalAPagar">
                         <p>Total a Pagar: $ <span id="totalPago"></span></p>
                     </div>
                     <div class="row">
